@@ -13,16 +13,16 @@ while True:
             print("Você fechou o sistema!")
             break
         elif pergunta == '1':
-            binario = str(bin(numero))
-            print(f"Esse é o valor do número digitado em binário: {binario}!")
+            binario = bin(numero)
+            print(f"Esse é o valor do número digitado em binário: {binario[2:]}")
             break
         elif pergunta == '2':
-            octal = str(oct(numero))
-            print(f"Esse é o valor do número digitado em octal: {octal}!")
+            octal = oct(numero)
+            print(f"Esse é o valor do número digitado em octal: {octal[2:]}")
             break
         elif pergunta == '3':
-            hexa = str(hex(numero))
-            print(f"Esse é o valor do número digitado em octal: {hexa}!")
+            hexa = hex(numero)
+            print(f"Esse é o valor do número digitado em octal: {hexa[2:]}")
             break
         else:
             print("Opção invalida!")
