@@ -34,7 +34,9 @@ while True:
             print(f"📦 Pagando em até 2x, o valor permanece o mesmo: R${valor:.2f}.")
             break
         elif escolha == '4':
-            print(f"📈 Parcelamento em 3x ou mais terá um acréscimo de 20%. O novo valor será R${valor_com_juros:.2f}.")
+            total_parcela = int(input("Quantas parcelas? "))
+            parcela = valor_com_juros / total_parcela
+            print(f"📈 Parcelamento em {total_parcela}x de {parcela} com juross de 20%. O novo valor será R${valor_com_juros:.2f}.")
             break
         else:
             print("⚠️ Opção inválida. Por favor, escolha uma das opções disponíveis.")
