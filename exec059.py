@@ -1,9 +1,11 @@
+from time import sleep
+
+print("\n--- Vamos trabalhar com números! ---")
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite outro número: "))
+
 while True:
     try:
-        print("\n--- Vamos trabalhar com números! ---")
-        n1 = int(input("Digite um número: "))
-        n2 = int(input("Digite outro número: "))
-
         soma = n1 + n2
         multi = n1 * n2
 
@@ -43,6 +45,6 @@ while True:
 
         else:
             print("Opção inválida! Por favor, escolha uma opção válida.")
-            
+        sleep(2)
     except ValueError:
         print("⚠️ Erro: Por favor, insira um número válido.")
